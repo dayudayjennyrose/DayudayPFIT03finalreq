@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="#div1">Lifestyle</a>
+        <a href="#div2">Fashion</a>
+        <a href="#div3">Beauty</a>
+    </div>
+
+    <div class="row" id="div1">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Welcome to Jenny Fashon and Beauty Blog</h2>
+                <h5>Jenny Fashon and Beauty Blog dedicated to curating timeless style and exploring the artistry of
+                    makeup and
+                    skincare. With a passion for sophistication and an eye for detail, our goal is to inspire
+                    individuals to
+                    express their unique elegance through fashion and beauty choices.</h5>
+                <img class="fakeimg" src="image6.jpg" alt="">
+                <p>JennyLifestyle</p>
+                <button onclick="document.location='lifestyle.html'">See Lifestyle</button>
+            </div>
+            <div class="card" id="div2">
+                <h5>
+
+                </h5>
+                <img class="fakeimg" src="images1.jpg" alt="">
+                <p>JennyFashion</p>
+                <button onclick="document.location='fashion.html'">See Fashion</button>
+            </div>
+
+            <div class="card" id="div3">
+                <h5>Step-by-step guides on achieving various makeup looks, from everyday elegance to glamorous evening
+                    styles.
+                </h5>
+                <img class="fakeimg" src="images2.jpg" alt="">
+                <p>JennyBeauty</p>
+                <button onclick="document.location='beauty.html'">See Beauty</button>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>Fashion</h2>
+                <p>
+                    Style and fashion are two closely related concepts that refer to the way people express themselves
+                    through their appearance and clothing. Style refers to a person's individual way of dressing and
+                    presenting themselves, including their choice of clothing, accessories, hair, makeup, and overall
+                    aesthetic.
+                </p>
+                <img class="fakeimg" src="275433822_169283732106832_4729634602446853470_n.jpg" alt="" style="height: 30%;">
+
+            </div>
+            <div class="card">
+                <h3>Popular Post</h3>
+                <img class="fakeimg2" src="278734558_176797811355424_2214146232694708921_n.jpg" alt="">
+
+                <img class="fakeimg2" src="410527026_395914849443718_1458789673091470394_n.jpg" alt="">
+                <img class="fakeimg2" src="261375981_147413787627160_934331730244498117_n.jpg" alt="">
+                <p></p>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="card">
+        <center>
+            <h3>Follow Me</h3>
+            <a href="https://web.facebook.com/profile.php?id=100070756183595">facebook</a>
+        </center>
+    </div>
+    </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var scrollLinks = document.querySelectorAll('[href^="#"]');
+
+            scrollLinks.forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    var targetId = this.getAttribute('href');
+                    var targetElement = document.querySelector(targetId);
+
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

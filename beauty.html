@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="#div1">Lifestyle</a>
+        <a href="#div2">Fashion</a>
+        <a href="#div3">Beauty</a>
+    </div>
+
+    <div class="row" id="div1">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Welcome to Jenny Fashon and Beauty Blog</h2>
+                <h5>Jenny Fashon and Beauty Blog dedicated to curating timeless style and exploring the artistry of
+                    makeup and
+                    skincare. With a passion for sophistication and an eye for detail, our goal is to inspire
+                    individuals to
+                    express their unique elegance through fashion and beauty choices.</h5>
+                <img class="fakeimg" src="image6.jpg" alt="">
+                <p>JennyLifestyle</p>
+                <button onclick="document.location='lifestyle.html'">See Lifestyle</button>
+            </div>
+            <div class="card" id="div2">
+                <h5>
+
+                </h5>
+                <img class="fakeimg" src="images1.jpg" alt="">
+                <p>JennyFashion</p>
+                <button onclick="document.location='fashion.html'">See Fashion</button>
+            </div>
+
+            <div class="card" id="div3">
+                <h5>Step-by-step guides on achieving various makeup looks, from everyday elegance to glamorous evening
+                    styles.
+                </h5>
+                <img class="fakeimg" src="images2.jpg" alt="">
+                <p>JennyBeauty</p>
+                <button onclick="document.location='beauty.html'">See Beauty</button>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>JennyBeauty</h2>
+                <p>
+                    Beauty is confidence, contentedness, happiness, and love. Someone who is perfectly at ease with who they are, both physically and mentally; a person that loves and is loved by their family and friends is beautiful.
+                </p>
+                <img class="fakeimg" src="401144778_376203754748161_237394537123355065_n.jpg" alt="" style="height: 30%;">
+
+            </div>
+            <div class="card">
+                <h3>Popular Post</h3>
+                <img class="fakeimg2" src="407575525_388135863554950_4721005340293528836_n.jpg" alt="">
+
+                <img class="fakeimg2" src="276015981_170715351963670_2625516789722028963_n.jpg" alt="">
+                <img class="fakeimg2" src="275731243_169244192110786_5528535919240205078_n.jpg" alt="">
+                <p></p>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="card">
+        <center>
+            <h3>Follow Me</h3>
+            <a href="https://web.facebook.com/profile.php?id=100070756183595">facebook</a>
+        </center>
+    </div>
+    </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var scrollLinks = document.querySelectorAll('[href^="#"]');
+
+            scrollLinks.forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    var targetId = this.getAttribute('href');
+                    var targetElement = document.querySelector(targetId);
+
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
